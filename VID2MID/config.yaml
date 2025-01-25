@@ -1,0 +1,31 @@
+﻿global:
+  roi: [0, 0, 1920, 1080]  # Full frame by default
+  blur: 5
+  min_movement_threshold: 0.1
+  color_sensitivity: 0.8
+
+tracks:
+  background:
+    program: 52  # Pad
+    base_note: 36
+    decay: 15000
+    scale: [0, 3, 7, 10]  # Minor 7th chord
+    
+  medium:
+    program: 74  # Flute
+    zone: [100, 100, 1820, 980]  # Smaller than full frame, with margins
+    scale: [0, 2, 4, 7, 9]  # Pentatonic
+    velocity_curve: "exponential"
+    intensity_threshold: 0.8
+    
+  details:
+    program: 127  # Synth FX
+    min_area: 30
+    note_range: [84, 96]
+    velocity_range: [60, 127]
+    group_threshold: 50  # ms
+
+processing:
+  parallel: true
+  chunk_size: 100  # frames
+  cache_frames: false
