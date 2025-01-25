@@ -84,13 +84,11 @@ pip install -r requirements-dev.txt
 # Run tests
 pytest tests/
 📚 Documentation
-Full documentation available at docs/
+
 🤝 Contributing
-Contributions welcome! Please read our Contributing Guide
+Contributions welcome! 
 📄 License
 MIT © [TZOOTZ RESEARCH 2025®]
-🎬 Demo
-Watch Demo Video
 
 Made with ❤️ by [TZOOTZ RESEARCH 2025®]
 Turn your motion into music# VID2MID
